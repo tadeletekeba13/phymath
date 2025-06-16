@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics & Math Academy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Roboto & Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body, h1, h2, h3, h4, h5, h6, .logo, .card-title, .card-text, .btn, nav, .footer-content, .footer-section, .footer-bottom {
+            font-family: 'Georgia', serif !important;
+        }
+    </style>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="animated-header">
+        <nav>
+            <div class="logo">
+                <i class="fas fa-atom fa-2x"></i>
+                <span>PhyMath</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" class="nav-icon-link">
+                        <div><i class="fas fa-home"></i></div>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#physics" class="nav-icon-link">
+                        <div><i class="fas fa-cogs"></i></div>
+                        <span>Physics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#math" class="nav-icon-link">
+                        <div><i class="fas fa-square-root-alt"></i></div>
+                        <span>Mathematics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#tutorials" class="nav-icon-link">
+                        <div><i class="fas fa-chalkboard-teacher"></i></div>
+                        <span>Tutorials</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-icon-link">
+                        <div><i class="fas fa-info-circle"></i></div>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-icon-link">
+                        <div><i class="fas fa-envelope"></i></div>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <style>
+            .nav-links {
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+            }
+            .nav-links li {
+                list-style: none;
+            }
+            .nav-icon-link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+            }
+            .nav-icon-link i {
+                font-size: 1em;
+                margin-bottom: 0.2em;
+            }
+            .nav-icon-link span {
+                font-size: 0.95em;
+            }
+        </style>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="animated-title">Unlock the Universe with Physics & Math</h1>
+                <p class="animated-subtitle">Interactive lessons, animated explanations, and problem-solving techniques</p>
+                <button class="cta-button pulse">Start Learning</button>
+            </div>
+            <div class="hero-animation">
+                <!-- This will be animated with JS -->
+                <div class="atom-animation">
+                    <div class="nucleus"></div>
+                    <div class="orbit o1"></div>
+                    <div class="orbit o2"></div>
+                    <div class="orbit o3"></div>
+                    <div class="electron e1"></div>
+                    <div class="electron e2"></div>
+                    <div class="electron e3"></div>
+                </div>
+            </div>
+        </section>
+        <section id="physics" class="subject-section">
+            <h2>Physics Topics</h2>
+                <div class="row g-4 py-0 mx-0">
+                    <!-- Row 1 -->
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-cogs fa-3x text-primary"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mechanics</h5>
+                                <p class="card-text">Explore the laws of motion, forces, energy, and the fundamental principles that govern physical objects.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-bolt fa-3x text-warning"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Electromagnetism</h5>
+                                <p class="card-text">Dive into electric and magnetic fields, circuits, and the interactions that power our modern world.</p>
+                                <a href="#" class="btns  mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-atom fa-3x text-info"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Quantum Physics</h5>
+                                <p class="card-text">Uncover the mysteries of the quantum world, from particles and waves to uncertainty and entanglement.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-fire fa-3x text-danger"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Thermodynamics</h5>
+                                <p class="card-text">Understand heat, work, energy, and the laws that govern the behavior of matter and energy.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-lightbulb fa-3x text-warning"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Optics</h5>
+                                <p class="card-text">Discover the science of light, lenses, mirrors, and the phenomena of reflection, refraction, and diffraction.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-wave-square fa-3x text-success"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Waves & Sound</h5>
+                                <p class="card-text">Learn about wave motion, sound, resonance, and the principles that explain vibrations and oscillations.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-infinity fa-3x text-secondary"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Relativity</h5>
+                                <p class="card-text">Explore Einstein's theories of special and general relativity, time dilation, and the fabric of spacetime.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-radiation fa-3x text-warning"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Nuclear Physics</h5>
+                                <p class="card-text">Delve into the structure of atomic nuclei, radioactivity, and the processes powering stars and reactors.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 3: 4 new cards -->
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-star fa-3x text-warning"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Astrophysics</h5>
+                                <p class="card-text">Journey through the cosmos, exploring stars, galaxies, black holes, and the origins of the universe.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-circle-notch fa-3x text-info"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Particle Physics</h5>
+                                <p class="card-text">Investigate the fundamental particles and forces that make up the universe at the smallest scales.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-water fa-3x text-primary"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Fluid Dynamics</h5>
+                                <p class="card-text">Study the motion of liquids and gases, from ocean currents to aerodynamics and weather patterns.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-dna fa-3x text-success"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Biophysics</h5>
+                                <p class="card-text">Explore the intersection of biology and physics, understanding life through physical principles.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="math" class="subject-section">
+            <h2>Mathematics Topics</h2>
+            <div class="topic-cards">
+                <div class="row g-4 py-0 mx-0">
+                    <!-- Row 1 -->
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-square-root-alt fa-3x text-primary"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Algebra</h5>
+                                <p class="card-text">Master equations, inequalities, polynomials, and algebraic structures fundamental to all math.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-chart-line fa-3x text-warning"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Calculus</h5>
+                                <p class="card-text">Explore limits, derivatives, integrals, and the mathematics of change and motion.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-shapes fa-3x text-info"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Geometry</h5>
+                                <p class="card-text">Study shapes, sizes, relative positions, and properties of space in two and three dimensions.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-project-diagram fa-3x text-danger"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Trigonometry</h5>
+                                <p class="card-text">Understand the relationships between angles and sides in triangles and periodic phenomena.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 2 -->
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-infinity fa-3x text-secondary"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Set Theory</h5>
+                                <p class="card-text">Delve into the study of sets, logic, and foundational structures of mathematics.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-random fa-3x text-success"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Probability & Statistics</h5>
+                                <p class="card-text">Analyze data, chance, distributions, and statistical inference for real-world applications.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-cubes fa-3x text-info"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Linear Algebra</h5>
+                                <p class="card-text">Learn about vectors, matrices, linear transformations, and their applications.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-network-wired fa-3x text-warning"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Discrete Mathematics</h5>
+                                <p class="card-text">Explore combinatorics, graph theory, logic, and algorithms essential for computer science.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row 3 -->
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-wave-square fa-3x text-primary"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Differential Equations</h5>
+                                <p class="card-text">Solve equations involving derivatives and model dynamic systems in science and engineering.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-brain fa-3x text-success"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Number Theory</h5>
+                                <p class="card-text">Investigate properties of integers, primes, divisibility, and cryptographic applications.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-layer-group fa-3x text-info"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Topology</h5>
+                                <p class="card-text">Study properties of space preserved under continuous transformations and abstract structures.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center py-3">
+                            <div class="mb-3">
+                                <i class="fas fa-superscript fa-3x text-danger"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Mathematical Logic</h5>
+                                <p class="card-text">Understand formal systems, proofs, and the logical foundations of mathematics.</p>
+                                <a href="#" class="btns mt-2">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About PhyMath</h3>
+                <p>Bringing complex physics and math concepts to life through interactive animations and clear explanations.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#physics">Physics</a></li>
+                    <li><a href="#math">Mathematics</a></li>
+                    <li><a href="#tutorials">Tutorials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@phymath.com</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/tadele-tekeba"><i class="fab fa-linkedin"></i> </a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 PhyMath | Designed for Physics and Math Education by Tadele T.
+        </div>
+    </footer>
+
+    <script src="scripts.js"> </script>
+</body>
+</html>
