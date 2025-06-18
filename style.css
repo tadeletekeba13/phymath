@@ -112,6 +112,7 @@ nav {
 .burger {
     display: none;
     cursor: pointer;
+    color: var(--tertiary);
 }
 
 .burger div {
@@ -631,18 +632,22 @@ footer {
     
     .burger {
         display: block;
+        color: var(--tertiary);
     }
     
     .burger.active .line1 {
         transform: rotate(-45deg) translate(-5px, 6px);
+        color: var(--tertiary);
     }
     
     .burger.active .line2 {
         opacity: 0;
+        color: var(--tertiary);
     }
     
     .burger.active .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
+        color: var(--tertiary);
     }
     
     .animated-title {
